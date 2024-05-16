@@ -1,0 +1,319 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+}
+
+.interface{
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    background-color: #604829;
+    width: 100%;
+    position: fixed;
+}
+
+header > .interface{
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header #logo{
+    width: 100px;
+}
+
+header a {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1em, 1.7rem, 2em);
+    text-decoration: none;
+    color: #927a5d;
+    display: inline-block;
+    transition: .2s;
+    text-shadow: 1px 3px 4px #665642 ; 
+}
+
+header a:hover{
+    color: #c4a47c;
+    transform: scale(1.05);
+    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 18px 40px;
+}
+
+.menu-celular{
+    cursor: pointer;
+    display: none;
+}
+
+.menu-celular .bar{
+    display: block;
+    width: 50px;
+    height: 8px;
+    border-radius: 3px;
+    background-color: #44331c;
+    margin: 5px auto;
+}
+
+
+/* BANNER DO SITE */
+
+.banner{
+    background-image: url(/assets/imgs/parallax-imagem1.png);
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: clamp(2rem, 2rem + 3vw, 6rem);
+    color: #fff;
+}
+
+/* INFORMAÇÕES */
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+.infos h2{
+    color: #c4a47c;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-size: clamp(1.3rem, 2rem + 1vw, 2.75rem);
+    text-align: center;
+}
+
+.infos p{
+    color: #666;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+/* DIVISÓRIAS */
+
+.divisoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.divisoria h3{
+    color: #fff;
+    font-style: italic;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 400;
+    background-color: #604829;
+    font-size: 1.4em;
+    width: 370px;
+    padding: 10px 20px;
+}
+
+.primeira{
+    background-image: url(/assets/imgs/parallax-imagem2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.segunda{
+    background-image: url(/assets/imgs/parallax-imagem3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTATOS E ENDEREÇOS */
+
+.contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/assets/imgs/parallax-imagem4.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    height: 80vh;
+}
+
+.contatos h2{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    background-color: #604829;
+    font-size: clamp(1.75em, 1em + 2vw, 2.5em);
+    padding: 10px 100px;
+
+}
+
+iframe{
+    width: 60%;
+    min-width: 367px;
+}
+
+.box-contatos{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    background-color: #604829;
+    text-align: center;
+    font-size: 1.2em;
+    width: 40%;
+    min-width: 367px;
+    padding: 20px 60px;
+    text-shadow: 1px 1px 0.2px #382f24;
+}
+
+/* HORÁRIOS */
+
+.horarios{
+    background-image: url(/assets/imgs/cafeteria.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    gap: 70px;
+}
+
+.horarios span{
+    color: #c4a47c;
+}
+
+.horarios h2{
+    color: #fff;
+    font-size: clamp(1.6em, 1em + 2vw, 2.5em);
+}
+
+
+.horarios li{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.5em, 0.8em + 0.5vw, 1.3em);
+}
+
+.horarios ul{
+    width: 30%;
+    min-width: 367px;
+    max-width: 30%;
+    list-style-type: none;
+}
+
+.horarios p{
+    color: #acacac;
+}
+
+
+/* BOTÃO VOLTAR*/
+
+/* RODAPÉ */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+    height: 10vh;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+footer p span{
+    color: #c4a47c;
+}
+
+footer img{
+    position: absolute;
+    top: -25px;
+    right: 20px;
+}
+
+/* MEDIA QUERIES*/
+
+/* TABLETS */
+
+@media (max-width:785px) {
+    .interface{
+        padding: 18px 20px;
+    }
+    .menu-celular{
+        display: block;
+    }
+    .menu-celular.ativo .bar:nth-child(1){
+        transform: translateY(13px) rotate(45deg);
+    }
+    .menu-celular.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu-celular.ativo .bar:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: -100%;
+        top: 89px;
+        width: 75%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #604829;
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .menu-item{
+        box-shadow: #554126 0px 1px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-menu li {
+        margin: 16px 0;
+    }
+    .botao-voltar{
+        opacity: 0;
+    }
+}
