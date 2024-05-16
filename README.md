@@ -3,13 +3,13 @@
 </h1>
 
 <div>
-    <img src="./assets/README imgs/Post 1 certo.jpg" alt="Ideia do projeto">
+    <img src="./assets/README imgs/Post 1 correto 1.jpg" alt="Ideia do projeto">
     
 </div>
 
 ## Sobre 📜
 
-### Um projeto de uma landding page para uma cafeteria usando apenas **HTML & CSS** para melhorar minhas habilidades de **front-end**.
+### Um projeto simples de uma landding page  para uma cafeteria usando apenas **HTML, CSS e JS** para melhorar minhas habilidades de **front-end**.
 
 <div>
     <img src="./assets/README imgs/2024-05-14 11-18-51.gif" alt="Gif da página rodando">
